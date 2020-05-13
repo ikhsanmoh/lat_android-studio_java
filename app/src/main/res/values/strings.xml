@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Uji Kepribadian</string>
+    <string name="quis1">
+        Kamu sedang jalan-jalan sore menikmati pemandangan kota. Tiba-tiba hujan deras mengguyur. Apa yang akan kamu lakukan :
+    </string>
+
+    <string name="soal1">
+        Kelompok warna manakah yang paling kamu sukai?
+    </string>
+    <string name="answer1_a">Hitam, Abu-abu, Coklat</string>
+    <string name="answer1_b">Biru, Hijau, Kuning</string>
+    <string name="answer1_c">Pelangi, Biru muda, Merah muda</string>
+    <string name="answer1_d">Crem, Coklat muda, Hijau muda</string>
+
+    <string name="soal2">
+        Makanan manakah yang paling kamu sukai?
+    </string>
+    <string name="answer2_a">Seafood</string>
+    <string name="answer2_b">McDonald</string>
+    <string name="answer2_c">Nasi Remes</string>
+    <string name="answer2_d">Sop</string>
+
+    <string name="soal3">
+        Pilih minuman yang paling kamu sukai sebagai teman makananmu...
+    </string>
+    <string name="answer3_a">Coca-cola</string>
+    <string name="answer3_b">Es teh</string>
+    <string name="answer3_c">Air Putih</string>
+    <string name="answer3_d">Jus Buah</string>
+
+    <string name="soal4">
+        Siaran TV apa yang paling kamu sukai?
+    </string>
+    <string name="answer4_a">Film Dokumenter</string>
+    <string name="answer4_b">Kartun</string>
+    <string name="answer4_c">Action/Komedi</string>
+    <string name="answer4_d">Drama</string>
+
+    <string name="soal5">
+        Apa pendapatmu tentang permen?
+    </string>
+    <string name="answer5_a">Suka banget!!!</string>
+    <string name="answer5_b">Kadang-kadang suka</string>
+    <string name="answer5_c">Permen untuk anak-anak</string>
+    <string name="answer5_d">Gak sehat...</string>
+
+    <string name="soal6">
+        Apa pendapatmu tentang Media Sosial?
+    </string>
+    <string name="answer6_a">Bermanfaat</string>
+    <string name="answer6_b">Buang-buang waktu aja...</string>
+    <string name="answer6_c">Penting banget, ga bisa lepas darinya..</string>
+    <string name="answer6_d">Membingungkan</string>
+
+    <string name="soal7">
+        Apa pendapatmu tentang smartphone?
+    </string>
+    <string name="answer7_a">Bermanfaat</string>
+    <string name="answer7_b">Penting banget lahh...</string>
+    <string name="answer7_c">Ga punya HP</string>
+    <string name="answer7_d">Mahal dan gak begitu penting</string>
+
+    <string name="soal8">
+        bagaimana cara kamu menikmati liburan?
+    </string>
+    <string name="answer8_a">Bermain bersama anak</string>
+    <string name="answer8_b">Makan bareng keluarga</string>
+    <string name="answer8_c">Main bareng temen-temen</string>
+    <string name="answer8_d">Main game dan banyak makan</string>
+
+    <string name="soal9">
+        Apa pendapatmu tentang musik klasik?
+    </string>
+    <string name="answer9_a">Suka.. bikin tenang</string>
+    <string name="answer9_b">Gak suka</string>
+    <string name="answer9_c">Kadang-kadang suka</string>
+    <string name="answer9_d">B aja</string>
+
+    <string name="soal10">
+        Ketika liburan kamu lebih suka kemana?
+    </string>
+    <string name="answer10_a">Pergi ke Taman Kota</string>
+    <string name="answer10_b">Pantai</string>
+    <string name="answer10_c">Bali</string>
+    <string name="answer10_d">Desa wisata</string>
+
+</resources>
