@@ -4,51 +4,43 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
-public class home extends AppCompatActivity {
+public class soal1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_soal1);
     }
 
     public void selected_next(View v) {
 
         //Initialize Var
-        Integer skor;
+        Integer skor_soal1;
 
         // Logic Operation for assigning var skor
         switch (v.getId()) {
             case R.id.A:
-                skor = 20;
+                skor_soal1 = 20;
                 break;
             case R.id.B:
-                skor = 30;
+                skor_soal1 = 30;
                 break;
             case R.id.C:
-                skor = 40;
+                skor_soal1 = 40;
                 break;
             case R.id.D:
-                skor = 10;
+                skor_soal1 = 10;
                 break;
             default:
-                skor = 0;
+                skor_soal1 = 0;
         }
-
-        //Converting Int to String and assign it
-        String skors = String.valueOf(skor);
 
         //Create instance for Intent Object
         Intent myInt = new Intent(this, soal2.class);
         //Send Data to specific Activity
-        myInt.putExtra(EXTRA_MESSAGE, skors);
+        myInt.putExtra("skors", skor_soal1);
         //Opening New Activity
         startActivity(myInt);
     }

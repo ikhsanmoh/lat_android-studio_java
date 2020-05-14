@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Uji Kepribadian</string>
-    <string name="quis1">
-        Kamu sedang jalan-jalan sore menikmati pemandangan kota. Tiba-tiba hujan deras mengguyur. Apa yang akan kamu lakukan :
+    <string name="ket_game">
+        Cari tau usia mentalmu dengan menjawab seluruh pertanyaan yang akan di ajukan.
     </string>
+<!--    <string name="list_ket_game">-->
+<!--        • Pertanyaan sebanyak 10 soal dengan opsi jawaban pilihan ganda.<br />-->
+<!--        • Jawablah dengan jujur untuk mandapatkan hasil yang akurat.<br />-->
+<!--        • Jawaban tidak bisa diubah ketika jawaban telah dipilih.-->
+<!--    </string>-->
 
+    <!-- Resource For The Test Questions-->
     <string name="soal1">
         Kelompok warna manakah yang paling kamu sukai?
     </string>
@@ -83,5 +89,36 @@
     <string name="answer10_b">Pantai</string>
     <string name="answer10_c">Bali</string>
     <string name="answer10_d">Desa wisata</string>
+
+    <!-- Resource For The Test Result -->
+    <string name="conclusion1_header">4 - 9 Tahun</string>
+    <string name="conclusion1_body">
+        Artinya kamu masih kekanak-kanakan.
+    </string>
+
+    <string name="conclusion2_header">9 - 16 Tahun</string>
+    <string name="conclusion2_body">
+        Artinya kamu seperti remaja, psikologis kamu suka berubah-ubah dan kamu masih mudah dipengaruhi.
+    </string>
+
+    <string name="conclusion3_header">16 - 21 Tahun</string>
+    <string name="conclusion3_body">
+        Artinya kamu mulai bisa mengatur emosi, mulai bisa membuat rencana dan bertanggung jawab.
+    </string>
+
+    <string name="conclusion4_header">21 - 29 Tahun</string>
+    <string name="conclusion4_body">
+        Artinya kamu mulai dewasa, mulai fokus atas keputusan yang telah kamu buat, bertanggung jawab dan dekat dengan keluarga.
+    </string>
+
+    <string name="conclusion5_header">30 - 55 Tahun</string>
+    <string name="conclusion5_body">
+        Artinya kamu telah cukup dewasa, bijaksana dan betul-betul dapat mengambil keputusan dan berkomitmen.
+    </string>
+
+    <string name="conclusion6_header">50+ Tahun</string>
+    <string name="conclusion6_body">
+        Artinya anda sudah tua, anda bisa mengambil makna dan hikmah hidup dan kadang-kadang bingun dengan teknologi dan kehidupan modern.
+    </string>
 
 </resources>

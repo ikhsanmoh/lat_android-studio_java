@@ -5,17 +5,48 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class soal3 extends AppCompatActivity {
+
+    Integer getData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_soal3);
+
+        //Getting Intent Data
+        getData = getIntent().getIntExtra("skors", 0);
     }
 
     public void selected_next(View v) {
+
+        Integer skor_soal3;
+
+        // Logic Operation for assigning var skor
+        switch (v.getId()) {
+            case R.id.A:
+                skor_soal3 = 40;
+                break;
+            case R.id.B:
+                skor_soal3 = 20;
+                break;
+            case R.id.C:
+                skor_soal3 = 10;
+                break;
+            case R.id.D:
+                skor_soal3 = 30;
+                break;
+            default:
+                skor_soal3 = 0;
+        }
+
+        //Akumulasi Skor Soal Terjawab
+        getData = getData + skor_soal3;
+
         Intent myInt = new Intent(this, soal4.class);
+        myInt.putExtra("skors", getData);
         startActivity(myInt);
     }
 }
