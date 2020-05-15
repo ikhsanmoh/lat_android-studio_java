@@ -43,5 +43,8 @@ public class soal1 extends AppCompatActivity {
         myInt.putExtra("skors", skor_soal1);
         //Opening New Activity
         startActivity(myInt);
+        //End This Activity
+        finish();
     }
+
 }

@@ -48,12 +48,14 @@ public class hasil extends AppCompatActivity {
 
         switch (v.getId()) {
             case R.id.Home:
-                myInt = new Intent(this, MainActivity.class);
-                startActivity(myInt);
+                //End This Activity
+                finish();
                 break;
             case R.id.Restart:
                 myInt = new Intent(this, soal1.class);
                 startActivity(myInt);
+                //End This Activity
+                finish();
                 break;
         }
     }

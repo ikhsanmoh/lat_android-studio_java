@@ -38,19 +38,37 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myInt);
     }
 
-//    //menampilkan dialog
-//    public void tampilDialog(String hasilnya, String opsi) {
-//
-//        builder = new AlertDialog.Builder(this);
-//        builder.setCancelable(false);
-//        builder.setTitle("Jawaban " + opsi);
-//        builder.setMessage(hasilnya);
-//        builder.setPositiveButton("OKE", new DialogInterface.OnClickListener() {
-//            @Override
-//            public void onClick(DialogInterface dialogInterface, int i) {
-//                Toast.makeText(MainActivity.this, "Coba Lagi", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//        builder.create().show();
-//    }
+    //Costumize Fungsi tombol back
+    @Override
+    public void onBackPressed() {
+        //Alert Peringatan Keluar dari App
+        isFinish("Keluar dari Applikasi");
+    }
+
+    public void isFinish(String alertMessage) {
+
+        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                switch (which) {
+                    case DialogInterface.BUTTON_POSITIVE:
+                        //Keluar dari aktivitas ini
+                        finish();
+                        break;
+
+                    case DialogInterface.BUTTON_NEGATIVE:
+                        //Tidak ada perintah
+                        break;
+                }
+            }
+        };
+
+        builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setMessage(alertMessage);
+        builder.setPositiveButton("Ya", dialogClickListener);
+        builder.setNegativeButton("Batalkan", dialogClickListener);
+        builder.create().show();
+    }
+
 }

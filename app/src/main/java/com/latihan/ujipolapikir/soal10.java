@@ -58,8 +58,47 @@ public class soal10 extends AppCompatActivity {
                 Intent myInt = new Intent(soal10.this, hasil.class);
                 myInt.putExtra("skors", getData);
                 startActivity(myInt);
+                //End This Activity
+                finish();
             }
         });
+        builder.create().show();
+    }
+
+    //Costumize Fungsi tombol back
+    @Override
+    public void onBackPressed() {
+        //Alert Peringatan Kembali ke Home
+        isFinish(
+                "Kembali Ke Home",
+                "Aksi ini akan menghapus histori jawaban anda pada sesi ini!!!"
+        );
+    }
+
+    public void isFinish(String alertTitle, String alertMessage) {
+
+        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                switch (which) {
+                    case DialogInterface.BUTTON_POSITIVE:
+                        //Keluar dari aktivitas ini
+                        finish();
+                        break;
+
+                    case DialogInterface.BUTTON_NEGATIVE:
+                        //Tidak ada perintah
+                        break;
+                }
+            }
+        };
+
+        builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setTitle(alertTitle);
+        builder.setMessage(alertMessage);
+        builder.setPositiveButton("OKE, Saya mengerti", dialogClickListener);
+        builder.setNegativeButton("Batalkan", dialogClickListener);
         builder.create().show();
     }
 
